@@ -1,0 +1,33 @@
+/ *
+This is just my thought process: 
+User puts in four inputs, x1, x2, y1, y2.
+m is calculated by (y2 - y1) divided by (x2-x1).
+initialize b and z( z stands for the x in the formula( y = mx + b)
+z can be given by multiplying m * x1( or x2,choosing x1, just because) 
+if z is positive, b = y - z
+if z is negative, b = y + z
+display "y = mx + b"
+*/
+
+
+
+
+
+var x1 = prompt("please input a x1");
+var y1 = prompt("please input a y1");
+var x2 = prompt("please input a x2");
+var y2 = prompt("please input a y2");
+var m = (y2 - y1) / (x2 - x1);
+var b;
+var z = m * x1;
+function slope() {
+  if ( z > 0){
+  	b = y1 - z;
+  } 
+  else{
+  	b = y1 + z;
+  } 
+  return b
+}
+var bizz = slope();
+alert("y" + "=" +" "+ m + "x"+" "+" "+ bizz);
