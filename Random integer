@@ -1,0 +1,7 @@
+/*
+This one is the easiest one (haha)
+*/
+
+var low = prompt("Give me your lowest number:");
+var high = prompt("give me highest: ")
+var num = alert((Math.random() * (high-low) + 1) + low)
